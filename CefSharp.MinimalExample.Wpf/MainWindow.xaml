@@ -7,17 +7,9 @@
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
         Title="{Binding Path=Title, ElementName=Browser, Converter={StaticResource TitleConverter}}"
         WindowState="Maximized"
-        Loaded="Page_Loaded"
         Unloaded="Page_Unloaded">
     <Grid>
-        <TabControl Name="MyTabControl">
-            <TabItem Header="Google">
-                <ContentControl Name="GoogleBrowserContainer" />
-            </TabItem>
-            <TabItem Header="Bing">
-                <ContentControl Name="BingBrowserContainer" />
-            </TabItem>
-        </TabControl>
+        <ContentControl Name="GoogleBrowserContainer" />
         <StackPanel VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="20">
